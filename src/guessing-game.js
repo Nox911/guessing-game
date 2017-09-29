@@ -10,7 +10,7 @@ class GuessingGame {
   }
 
   guess() {
-    if(((this.max + this.min)%2)==0) {
+    if(((this.max + this.min)%2)===0) {
     	return this.rez=(this.max + this.min)/2; 
    	}
    	else {
@@ -19,7 +19,7 @@ class GuessingGame {
    }
 
   lower() {
-    if(((this.max + this.min)%2)==0) {
+    if(((this.max + this.min)%2)===0) {
 			return this.max=(this.max + this.min)/2;
   	}
   	else {
@@ -28,7 +28,7 @@ class GuessingGame {
 	}
 
   greater() {
-    if(((this.max + this.min)%2)==0) {
+    if(((this.max + this.min)%2)===0) {
     	return this.min = (this.max + this.min)/2;
     }
     else {
